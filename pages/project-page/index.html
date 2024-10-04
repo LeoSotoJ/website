@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automated Prediction of the Endocrine Disruptive Potency of Chemicals detected with LC/ESI/HRMS based on Mass Spectral Networks </title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <div style="display: flex; justify-content: center; align-items: center; height: 5vh;">
+      <a class="icon" href="/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+  </div>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Automated Prediction of the Endocrine Disruptive Potency of Chemicals detected with LC/ESI/HRMS based on Mass Spectral Networks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://leosotoj.com">Soto L.</a><sup>1</sup>
+          </div>
+          
+          
+          <div class="is-size-5 publication-authors">
+            Supervisors: 
+            <span class="author-block">
+              Kruve A.<sup>2</sup>,</span>
+	      Hawkes J.<sup>1</sup>,</span>
+	      Rebane R.<sup>3</sup></span>
+            <span class="author-block">
+          </div>
+        
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Uppsala University,</span>
+            <span class="author-block"><sup>2</sup>Stockholm University</span>
+	    <span class="author-block"><sup>3</sup>University of Tartu</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://raw.githubusercontent.com/LeoSotoJ/degree-project/public-branch/main.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Report</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/LeoSotoJ/MS2Net"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Registry Link. -->
+              <span class="link-block">
+                <a href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1875527"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-archive"></i>
+                  </span>
+                  <span>DiVA record</span>
+                </a>
+              </span>
+              
+              
+            </div>
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./static/images/DDApos.jpg">
+      <h2 class="subtitle has-text-centered">
+        MNTox pinpoints MS<sup>2</sup> features with endocrine disruptive potency.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          The widespread exposure to chemicals has raised concerns about their toxicity impact on public health and the environment. Identifying and quantifying these chemicals in complex samples is not always possible, making the assessment of their toxicities difficult. </p>
+          
+          <p>In an effort to quickly screen chemicals for potential risks to human health, this study aims to predict toxicities based on tandem mass spectrometry MS<sup>2</sup> data. To achieve this goal, endocrine-disrupting activity data and other relevant human endpoints from the Tox21 Challenge were collected and combined with mass spectra from Mass Bank Europe. A <i>k</i>-nearest neighbors (<i>k</i>-NN) and a spectra network-based algorithm were implemented to predict the activity from MS<sup>2</sup> mass spectra. For <i>k</i>-NN, 5-fold cross-validation, the highest recall and precision were 47.1% and 44.4% (both for NR.AR), respectively. The implementation of a spectral similarity network enhanced the recall and precision to 81.8% and 75.0% (both for NR.AR), respectively. The spectral networks showed active clusters for the NR.AR, NR.ER, NR.AR.LBD, and NR.ER.LBD endpoints. </p>
+          
+          <p>The approach was applied to retrospective analysis of MS<sup>2</sup> mass spectra of a wastewater sample, showing potential for toxicity alerts. The predictive capabilities of the model could benefit from feature selection techniques, network optimization, and integration with datasets from other domains.</p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Toxicity dataset</h2>
+          <p>
+            The toxicity data had some association between endpoints as illustrated in this phi coefficient matrix. The lowest phi coefficient was for (NR.AR, NR.PPAR.gamma) and the highest for 0.756 (NR.AR, NR.AR.LBD).
+          </p>
+          <img src="./static/images/phi_matrix.jpg">
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">MS<sup>2</sup> dataset</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              The cosine similarity metrics showed some groups of chemicals with high similarity values which later will show up as clusters in a network.
+            </p>
+              <img src="./static/images/cosine_zoom_in.png">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Mass Spectra Networks</h2>
+
+
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+       
+     <!-- Interpolating new. -->
+        <h3 class="title is-4">Cosine similarity threshold</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can adapt the network according to the cosine similarity threshold. Use the slider to change the cosine threshold.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+            <div class="column interpolation-video-column">
+                        <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+                   
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+
+          </div>
+          
+        </div>
+        <br/>
+        <!--/ Interpolating new. -->
+        
+        </div>
+        
+        
+        <div class="column">
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Prediction</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using the network, you can predict the toxicity of unknow mass spectra (white nodes). In this example, red nodes are active and the green ones are inactive to the NR-AR endpoint. The (+) sign means predicted as active and (-) as inactive.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/NR.AR_class.jpg">
+          
+          
+        </div>
+        <!--/ Re-rendering. -->
+	</div>
+      </div>
+      </div>
+      	
+    </div>
+    <!--/ Animation. -->
+
+
+
+    <!-- Sample analysis. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Sample analysis</h2>
+
+           <p>
+            We also applied the network to the analysis of a real sample. The prediction model pinpointed mass spectra featues that later were examined for identification revealing some active substances.
+          </p>
+          
+     
+
+      </div>
+    </div>
+     
+
+
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-toby">
+          <img src="./static/images/spectra_sample_bufexamac.png">
+        </div>
+        <div class="item item-toby">
+          <img src="./static/images/spectra_sample.png">
+        </div>
+        <div class="item item-toby">
+          <img src="./static/images/spectra_sample_steroid.png">
+        </div>
+        <div class="item item-toby">
+          <img src="./static/images/spectra_sample_bufexamac.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--/ Sample analysis. -->
+    
+    
+
+    <!-- Last remarks. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <br><h2 class="title is-3">Last remarks</h2>
+        <div class="content has-text-justified">
+          
+<p>
+   This approach shows potential for the automated screening of mass spectra features in non-targeted analysis and the prioritization of samples.
+</p>
+
+<p>
+   We hope that further expansion of mass spectra databases, development of algorithms, and the integration of multi-domain databases could increase performance and chemical space for a more feasible study of contaminated areas.
+</p>
+
+<p>
+   Similar network approaches to this one could be beneficial in other fields as well, for example, in the pharmacognosy of bioactive compounds from natural sources.
+</p>
+
+      </div>
+      </div>
+    </div> 
+
+
+
+    
+    
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There are many works that inspired this project, some of them are:
+          </p>
+
+<p>
+<a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp"> GNPS </a> is a community-based platform that implements a similar molecular networking approach used in this project for the identification of MS/MS spectra.</p>
+
+          <p>
+
+           <a href="http://www.mixture-platform.net/Detective_QSAR_Med_Open/">Detective-QSAR</a> predicts physicochemical properties and toxicities based on GC-MS data and the XGBoost Machine Learning method. </p>
+
+         <p>
+   <a href="https://pubs.acs.org/doi/10.1021/acs.est.2c02536">MS2Tox</a> is a Machine Learning Tool for Predicting the Ecotoxicity based on LC-HRMS data and the <a href="https://comptox.epa.gov/dashboard/"> CompTox </a> database applying a xgbDART method. </p>
+
+
+<p>
+News about recent projects in mass spectrometry data analytics can be found on the <a href="https://kruvelab.com/research/">Kruve Lab</a> website.
+
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@masterthesis{Soto_2023,
+  title={Automated Prediction of the Endocrine Disruptive Potency of Chemicals detected with LC/ESI/HRMS based on Mass Spectral Networks},
+  url={https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-532906},
+  author={Soto, Leonardo},
+  year={2023},
+  collection={UPKEM E}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8 has-text-centered">
+        <div class="content">
+          <p>
+Source code of this website borrowed from <a href="https://github.com/nerfies/nerfies.github.io"> here</a>.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

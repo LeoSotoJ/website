@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chemometrics on Leonardo Soto</title>
+    <link>https://leosotoj.com/tags/chemometrics/</link>
+    <description>Recent content in Chemometrics on Leonardo Soto</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://leosotoj.com/tags/chemometrics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Study of Essential Oils with Principal Components Analysis in R</title>
+      <link>https://leosotoj.com/post/2024/09/28/study-of-essential-oils-with-principal-components-analysis-in-r/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/09/28/study-of-essential-oils-with-principal-components-analysis-in-r/</guid>
+      <description>&lt;p&gt;Principal Component Analysis (PCA) is a statistical technique to analyze high-dimensional data that uses linear combinations of the original variables to capture the maximum variance of the data. The main uses of PCA are dimension reduction and patterns identification. This post describes the PCA workflow and the step-to-step process applied to an analytical chemistry example using R.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-workflow&#34;&gt;1. Workflow&lt;/h1&gt;&#xA;&lt;p&gt;Briefly, one can start by defining the aim of the analysis. Then, examining the raw data and pre-processing it for outliers, centering, scaling, and feature selection. Centering and scaling can also be done directly with the PCA function in R.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

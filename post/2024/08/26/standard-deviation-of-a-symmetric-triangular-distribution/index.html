@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    <title>Standard deviation of a symmetric triangular distribution | Leonardo Soto</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+  <body>
+  <header class="bg"></header>
+  <div class="layout">
+  
+  <div class="header"><h1><a href="/" style="color: #fff; text-decoration: underline; text-decoration-style: dotted;">Leonardo</a></h1></div>
+    <nav class="navbar navbar-expand sticky-top navbar-nav-scroll navbar-dark">
+    <ul class="navbar-nav" style="padding: 5px;">
+      <li class="nav-item" style="margin-left: -5px;"><a class="nav-link active" href="/" style="margin-left: 15px;">Home</a></li>      
+      <li class="nav-item" style="margin-left: -5px;"><a class="nav-link active" href="/post/" style="margin-left: 15px;">Posts</a></li>      
+      <li class="nav-item" style="margin-left: -5px;"><a class="nav-link active" href="/contact/" style="margin-left: 15px;">Contact</a></li>      
+      <li class="nav-item" style="margin-left: -5px;"><a class="nav-link active" href="/index.xml" style="margin-left: 15px;">RSS</a></li>      
+    </ul>
+    </nav>
+
+<div class="content">
+<div class="article-meta">
+<h1><span class="title">Standard deviation of a symmetric triangular distribution</span></h1>
+<p class="author">LS 
+| <span class="date">2024/08/26</span></p>
+</div>
+
+
+<p style="text-align: center;">
+
+<a class="badge badge-secondary" href="/tags/uncertainty"> #uncertainty</a>
+
+</p>
+
+
+
+
+
+
+<main>
+<p>Estimating the measurement uncertainty usually requires identifying a representative distribution function and its standard deviation for a given variable. Most common distributions are normal, rectangular, and triangular. This post briefly shows the calculations behind the rule of 1 over \sqrt{6} for a symmetric triangular distribution.</p>
+<h5 id="lets-begin">Let&rsquo;s begin!</h5>
+<p>Starting with the integral of the probability density function,
+</p>
+$$\int_{-\infty}^{\infty} f(x)dx\equiv 1$$<p>in the case of a symmetric triangular distribution, we find that c is 1/a.</p>
+<p><img src="img/triangular-ditribution.svg" alt=""></p>
+$$\int_{-a}^{a} f(x)dx= 1=\frac{base \times height}{2}= \frac{2ac}{2}\implies c=\frac{1}{a}$$<p>Then, its probability density function can be represented as,</p>
+$$f(x) = \left\{ \begin{array}{cl}
+0 &  ,\ x \lt -a \\
+\frac{x}{a^{2}}+\frac{1}{a} &  ,\ -a \le x \le 0 \\
+-\frac{x}{a^{2}}+\frac{1}{a} &  ,\ 0 \le x \le a \\
+0 &  ,\ x \gt a
+\end{array} \right.$$<p>The variance of a continuous variable can be defined as</p>
+$$\sigma^{2}[X]= \int_{-\infty}^{\infty} (x-m)^2f(x)dx$$<p>where m is the mean.</p>
+<p>By the Steiner formula <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for practical calculation,</p>
+$$V(X)=E(X^2)-(E(X))^2$$<p>with mean equal to zero, then we have:</p>
+$$\sigma^{2}[X]= \int_{-a}^{a} x^2f(x)dx$$$$\sigma^{2}[X]= \int_{-a}^{0} x^2(\frac{x}{a^2}+\frac{1}{a})dx + \int_{0}^{a} x^2(-\frac{x}{a^2}+\frac{1}{a})dx$$<p>By symmetry, both integrals represent the same positive area under the curve, then:</p>
+$$\sigma^{2}[X]= 2\int_{0}^{a} x^2(-\frac{x}{a^2}+\frac{1}{a})dx = 2(\frac{x^4}{4a^2}+\frac{x^3}{3a})_{0}^{a}=\frac{a^2}{6}$$<p>Hence, the <strong>standard deviation</strong> of a symmetric triangular distribution is</p>
+$$\sigma[X]= \frac{a}{\sqrt{6}}$$<p><strong>(E)</strong></p>
+<h2 id="references">References</h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Expected Value, Variance and Higher Order Moments <a href="https://dictionary.helmholtz-uq.de/content/moments.html" target="_blank">dictionary.helmholtz-uq.de/content/moments.html</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</main>
+   <footer class="footer"> <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+ 
+  <hr/>
+  © <a href="/">Leonardo Soto</a> 2024 | <a href="https://github.com/LeoSotoJ?tab=repositories">GitHub</a> 
+  </footer>
+  </body>
+</html>
+
+</div>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Leonardo Soto</title>
+    <link>https://leosotoj.com/post/</link>
+    <description>Recent content in Posts on Leonardo Soto</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://leosotoj.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Study of Essential Oils with Principal Components Analysis in R</title>
+      <link>https://leosotoj.com/post/2024/09/28/study-of-essential-oils-with-principal-components-analysis-in-r/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/09/28/study-of-essential-oils-with-principal-components-analysis-in-r/</guid>
+      <description>&lt;p&gt;Principal Component Analysis (PCA) is a statistical technique to analyze high-dimensional data that uses linear combinations of the original variables to capture the maximum variance of the data. The main uses of PCA are dimension reduction and patterns identification. This post describes the PCA workflow and the step-to-step process applied to an analytical chemistry example using R.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-workflow&#34;&gt;1. Workflow&lt;/h1&gt;&#xA;&lt;p&gt;Briefly, one can start by defining the aim of the analysis. Then, examining the raw data and pre-processing it for outliers, centering, scaling, and feature selection. Centering and scaling can also be done directly with the PCA function in R.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Standard deviation of a symmetric triangular distribution</title>
+      <link>https://leosotoj.com/post/2024/08/26/standard-deviation-of-a-symmetric-triangular-distribution/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/08/26/standard-deviation-of-a-symmetric-triangular-distribution/</guid>
+      <description>&lt;p&gt;Estimating the measurement uncertainty usually requires identifying a representative distribution function and its standard deviation for a given variable. Most common distributions are normal, rectangular, and triangular. This post briefly shows the calculations behind the rule of 1 over \sqrt{6} for a symmetric triangular distribution.&lt;/p&gt;&#xA;&lt;h5 id=&#34;lets-begin&#34;&gt;Let&amp;rsquo;s begin!&lt;/h5&gt;&#xA;&lt;p&gt;Starting with the integral of the probability density function,&#xA;&lt;/p&gt;&#xA;$$\int_{-\infty}^{\infty} f(x)dx\equiv 1$$&lt;p&gt;in the case of a symmetric triangular distribution, we find that c is 1/a.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Macro for Uncertainty Estimation with the Kragten Method</title>
+      <link>https://leosotoj.com/post/2024/07/23/a-macro-for-uncertainty-estimation-with-the-kragten-method/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/07/23/a-macro-for-uncertainty-estimation-with-the-kragten-method/</guid>
+      <description>&lt;p&gt;Estimating the measurement uncertainty is a common activity in chemical laboratories. In the case of routine analysis and the validation of multiple methods, a rapid and reliable approach can be beneficial. Such alternative estimations are also useful for complex measurement models.&lt;/p&gt;&#xA;&lt;p&gt;This &lt;a href=&#34;https://github.com/LeoSotoJ/Kragten-Uncertainty&#34;&gt;VBA macro in Microsoft Excel&lt;/a&gt; estimates the measurement uncertainty by the Kragten method based on finite differences. The macros can be used for computing multiple measurement models and for sensitivity analysis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown test</title>
+      <link>https://leosotoj.com/post/2024/07/23/markdown-test/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/07/23/markdown-test/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&#xA;&lt;p&gt;Quisque mattis volutpat lorem vitae feugiat. Praesent porta est quis porta imperdiet. Aenean porta, mi non cursus volutpat, mi est mollis libero, id suscipit orci urna a augue. In fringilla euismod lacus, vitae tristique massa ultricies vitae. Mauris accumsan ligula tristique, viverra nulla sed, porta sapien. Vestibulum facilisis nec nisl blandit convallis. Maecenas venenatis porta malesuada. Ut ac erat tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sodales quam sit amet tincidunt egestas. In et turpis at orci vestibulum ullamcorper. Aliquam sed ante libero. Sed hendrerit arcu lacus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

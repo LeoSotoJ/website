@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MS Excel on Leonardo Soto</title>
+    <link>https://leosotoj.com/tags/ms-excel/</link>
+    <description>Recent content in MS Excel on Leonardo Soto</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://leosotoj.com/tags/ms-excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Macro for Uncertainty Estimation with the Kragten Method</title>
+      <link>https://leosotoj.com/post/2024/07/23/a-macro-for-uncertainty-estimation-with-the-kragten-method/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://leosotoj.com/post/2024/07/23/a-macro-for-uncertainty-estimation-with-the-kragten-method/</guid>
+      <description>&lt;p&gt;Estimating the measurement uncertainty is a common activity in chemical laboratories. In the case of routine analysis and the validation of multiple methods, a rapid and reliable approach can be beneficial. Such alternative estimations are also useful for complex measurement models.&lt;/p&gt;&#xA;&lt;p&gt;This &lt;a href=&#34;https://github.com/LeoSotoJ/Kragten-Uncertainty&#34;&gt;VBA macro in Microsoft Excel&lt;/a&gt; estimates the measurement uncertainty by the Kragten method based on finite differences. The macros can be used for computing multiple measurement models and for sensitivity analysis.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
